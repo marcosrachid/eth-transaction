@@ -15,6 +15,12 @@ String.prototype.hexEncode = function(){
 const pk = process.argv[2];
 const data = process.argv[3];
 
+// You can use any standard network name
+//  - "homestead"
+//  - "rinkeby"
+//  - "ropsten"
+//  - "kovan"
+//  - "goerli"
 const provider = ethers.getDefaultProvider('kovan');
 
 const wallet = new ethers.Wallet(pk, provider);
